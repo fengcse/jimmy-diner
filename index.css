@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header .container {
+  background-image: url(./burger.png);
+  background-size: cover;
+  height: 167px;
+  padding: 42px;
+}
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+header h1 {
+  font-size: 39px;
+  color: #fff;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 22px;
+  color: #fff;
+}
+main .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 30px; */
+}
+main .container {
+  padding: 30px;
+  padding-top: 0px;
+}
+main .menu-item {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0px auto;
+  border-bottom: 1px solid #8b8b8b;
+  padding: 10px 0;
+}
+main div.item-image {
+  font-size: 3em;
+  padding: 10px;
+}
+
+main .item-description p:nth-of-type(1) {
+  color: #8b8b8b;
+}
+main .item-add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  margin-left: auto;
+  border: 1px solid #8b8b8b;
+  padding: 15px;
+  border-radius: 50%;
+  text-align: center;
+}
+main .item-add:hover {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+main .your-order h2 {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+main .your-order .item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .your-order {
+  display: hidden;
+}
+main .your-order .left-p {
+  margin-right: 15px;
+  font-size: 28px;
+}
+main .your-order .item .remove {
+  cursor: pointer;
+  color: #8b8b8b;
+  font-size: 14px;
+  border: 1px solid #8b8b8b;
+  padding: 3px;
+  border-radius: 3px;
+}
+main .your-order .item .remove:hover {
+  background-color: #8b8b8b;
+  color: white;
+}
+main .your-order .price {
+  margin-left: auto;
+  font-size: 20px;
+}
+main .your-order .total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.your-order .item,
+.your-order .total {
+  margin: 5px 0;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  padding: 15px;
+  background-color: #16db99;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #13a87d;
+}
+button:active {
+  color: beige;
+}
+body .container {
+  position: relative;
+}
+
+.pop-up .container {
+  background-color: white;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 100px 100px rgba(0, 0, 0, 0.3);
+}
+.pop-up h2 {
+  margin-bottom: 20px;
+}
+.pop-up input {
+  padding: 10px;
+  margin: 10px 0;
+}
+.background {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  /* background: linear-gradient(to top, white, rgba(0, 0, 0, 0.5)); */
+  background: rgba(0, 0, 0, 0.1);
+}
+.item-price {
+  font-size: 14px;
+  color: #8b8b8b;
+}
+.item-quantity {
+  font-size: 22px;
+  color: #235784;
+}
+.item-image {
+  font-size: 2rem;
+  margin-right: 10px;
+}
+.item {
+  transition: all 0.5s ease;
+}
+
+.moveUp {
+  transform: translateY(-20px);
+  opacity: 0;
+}
